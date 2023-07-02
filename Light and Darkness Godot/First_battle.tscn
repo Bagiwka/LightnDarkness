@@ -1,0 +1,203 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh1o7puc1i4p6"]
+
+[ext_resource type="Script" path="res://First_battle.gd" id="1_bum3w"]
+[ext_resource type="Texture2D" uid="uid://d0nd3yvhdy1jq" path="res://defaultBG.png" id="2_jlhag"]
+
+[sub_resource type="Theme" id="Theme_i2xhl"]
+
+[node name="FirstBattle" type="Node2D"]
+script = ExtResource("1_bum3w")
+
+[node name="E1" type="Button" parent="."]
+offset_left = 90.0
+offset_top = 65.0
+offset_right = 250.0
+offset_bottom = 325.0
+text = "Black"
+
+[node name="E2" type="Button" parent="."]
+offset_left = 357.0
+offset_top = 66.0
+offset_right = 517.0
+offset_bottom = 326.0
+text = "White"
+
+[node name="E3" type="Button" parent="."]
+offset_left = 626.0
+offset_top = 67.0
+offset_right = 786.0
+offset_bottom = 327.0
+theme = SubResource("Theme_i2xhl")
+text = "White"
+
+[node name="E4" type="Button" parent="."]
+offset_left = 873.0
+offset_top = 69.0
+offset_right = 1033.0
+offset_bottom = 329.0
+text = "Black"
+
+[node name="ER5" type="Button" parent="."]
+offset_left = -625.0
+offset_top = -366.0
+offset_right = -465.0
+offset_bottom = -106.0
+
+[node name="ER6" type="Button" parent="."]
+offset_left = -625.0
+offset_top = -366.0
+offset_right = -465.0
+offset_bottom = -106.0
+
+[node name="ER7" type="Button" parent="."]
+offset_left = -625.0
+offset_top = -366.0
+offset_right = -465.0
+offset_bottom = -106.0
+
+[node name="ER8" type="Button" parent="."]
+offset_left = -625.0
+offset_top = -366.0
+offset_right = -465.0
+offset_bottom = -106.0
+
+[node name="D" type="Button" parent="."]
+offset_left = 1046.0
+offset_top = 490.0
+offset_right = 1122.0
+offset_bottom = 624.0
+text = "Deck"
+
+[node name="HW1" type="Button" parent="."]
+offset_left = 415.0
+offset_top = 468.0
+offset_right = 491.0
+offset_bottom = 602.0
+text = "White"
+
+[node name="HW2" type="Button" parent="."]
+offset_left = -471.0
+offset_top = 177.0
+offset_right = -395.0
+offset_bottom = 311.0
+text = "White"
+
+[node name="HW3" type="Button" parent="."]
+offset_left = -359.0
+offset_top = 176.0
+offset_right = -283.0
+offset_bottom = 310.0
+text = "White"
+
+[node name="HB1" type="Button" parent="."]
+offset_left = -580.0
+offset_top = 325.0
+offset_right = -504.0
+offset_bottom = 459.0
+text = "Black"
+
+[node name="HB2" type="Button" parent="."]
+offset_left = -470.0
+offset_top = 322.0
+offset_right = -394.0
+offset_bottom = 456.0
+text = "Black"
+
+[node name="HB3" type="Button" parent="."]
+offset_left = -358.0
+offset_top = 324.0
+offset_right = -282.0
+offset_bottom = 458.0
+text = "Black"
+
+[node name="HWR1" type="Button" parent="."]
+offset_left = -378.0
+offset_top = -221.0
+offset_right = -302.0
+offset_bottom = -87.0
+
+[node name="HWR2" type="Button" parent="."]
+offset_left = -266.0
+offset_top = -221.0
+offset_right = -190.0
+offset_bottom = -87.0
+
+[node name="HWR3" type="Button" parent="."]
+offset_left = -154.0
+offset_top = -222.0
+offset_right = -78.0
+offset_bottom = -88.0
+
+[node name="HBR1" type="Button" parent="."]
+offset_left = -378.0
+offset_top = -221.0
+offset_right = -302.0
+offset_bottom = -87.0
+
+[node name="HBR2" type="Button" parent="."]
+offset_left = -266.0
+offset_top = -222.0
+offset_right = -190.0
+offset_bottom = -88.0
+
+[node name="HBR3" type="Button" parent="."]
+offset_left = -154.0
+offset_top = -222.0
+offset_right = -78.0
+offset_bottom = -88.0
+
+[node name="Colour" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 492.0
+offset_right = 101.0
+offset_bottom = 626.0
+text = "Change Colour"
+
+[node name="DefaultBg" type="Sprite2D" parent="."]
+z_index = -1446
+position = Vector2(2318, 1008.25)
+scale = Vector2(12.3904, 10.6534)
+texture = ExtResource("2_jlhag")
+
+[node name="HPLabel" type="Label" parent="."]
+offset_left = 982.0
+offset_top = 356.0
+offset_right = 1022.0
+offset_bottom = 379.0
+
+[node name="H1" type="Button" parent="."]
+offset_left = -584.0
+offset_top = 26.0
+offset_right = -508.0
+offset_bottom = 160.0
+text = "Heal"
+
+[node name="H2" type="Button" parent="."]
+offset_left = -469.0
+offset_top = 26.0
+offset_right = -393.0
+offset_bottom = 160.0
+text = "Heal"
+
+[node name="H3" type="Button" parent="."]
+offset_left = -359.0
+offset_top = 26.0
+offset_right = -283.0
+offset_bottom = 160.0
+text = "Heal"
+
+[connection signal="pressed" from="E1" to="." method="_on_e_1_pressed"]
+[connection signal="pressed" from="E2" to="." method="_on_e_2_pressed"]
+[connection signal="pressed" from="E3" to="." method="_on_e_3_pressed"]
+[connection signal="pressed" from="E4" to="." method="_on_e_4_pressed"]
+[connection signal="pressed" from="D" to="." method="_on_d_pressed"]
+[connection signal="pressed" from="HW1" to="." method="_on_hw_1_pressed"]
+[connection signal="pressed" from="HW2" to="." method="_on_hw_2_pressed"]
+[connection signal="pressed" from="HW3" to="." method="_on_hw_3_pressed"]
+[connection signal="pressed" from="HB1" to="." method="_on_hb_1_pressed"]
+[connection signal="pressed" from="HB2" to="." method="_on_hb_2_pressed"]
+[connection signal="pressed" from="HB3" to="." method="_on_hb_3_pressed"]
+[connection signal="pressed" from="Colour" to="." method="_on_colour_pressed"]
+[connection signal="pressed" from="H1" to="." method="_on_h_1_pressed"]
+[connection signal="pressed" from="H2" to="." method="_on_h_2_pressed"]
+[connection signal="pressed" from="H3" to="." method="_on_h_3_pressed"]
