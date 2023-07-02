@@ -37,30 +37,6 @@ offset_right = 1033.0
 offset_bottom = 329.0
 text = "Black"
 
-[node name="ER5" type="Button" parent="."]
-offset_left = -625.0
-offset_top = -366.0
-offset_right = -465.0
-offset_bottom = -106.0
-
-[node name="ER6" type="Button" parent="."]
-offset_left = -625.0
-offset_top = -366.0
-offset_right = -465.0
-offset_bottom = -106.0
-
-[node name="ER7" type="Button" parent="."]
-offset_left = -625.0
-offset_top = -366.0
-offset_right = -465.0
-offset_bottom = -106.0
-
-[node name="ER8" type="Button" parent="."]
-offset_left = -625.0
-offset_top = -366.0
-offset_right = -465.0
-offset_bottom = -106.0
-
 [node name="D" type="Button" parent="."]
 offset_left = 1046.0
 offset_top = 490.0
@@ -110,42 +86,6 @@ offset_right = -282.0
 offset_bottom = 458.0
 text = "Black"
 
-[node name="HWR1" type="Button" parent="."]
-offset_left = -378.0
-offset_top = -221.0
-offset_right = -302.0
-offset_bottom = -87.0
-
-[node name="HWR2" type="Button" parent="."]
-offset_left = -266.0
-offset_top = -221.0
-offset_right = -190.0
-offset_bottom = -87.0
-
-[node name="HWR3" type="Button" parent="."]
-offset_left = -154.0
-offset_top = -222.0
-offset_right = -78.0
-offset_bottom = -88.0
-
-[node name="HBR1" type="Button" parent="."]
-offset_left = -378.0
-offset_top = -221.0
-offset_right = -302.0
-offset_bottom = -87.0
-
-[node name="HBR2" type="Button" parent="."]
-offset_left = -266.0
-offset_top = -222.0
-offset_right = -190.0
-offset_bottom = -88.0
-
-[node name="HBR3" type="Button" parent="."]
-offset_left = -154.0
-offset_top = -222.0
-offset_right = -78.0
-offset_bottom = -88.0
-
 [node name="Colour" type="Button" parent="."]
 offset_left = 25.0
 offset_top = 492.0
@@ -165,24 +105,10 @@ offset_top = 356.0
 offset_right = 1022.0
 offset_bottom = 379.0
 
-[node name="H1" type="Button" parent="."]
+[node name="H" type="Button" parent="."]
 offset_left = -584.0
 offset_top = 26.0
 offset_right = -508.0
-offset_bottom = 160.0
-text = "Heal"
-
-[node name="H2" type="Button" parent="."]
-offset_left = -469.0
-offset_top = 26.0
-offset_right = -393.0
-offset_bottom = 160.0
-text = "Heal"
-
-[node name="H3" type="Button" parent="."]
-offset_left = -359.0
-offset_top = 26.0
-offset_right = -283.0
 offset_bottom = 160.0
 text = "Heal"
 
@@ -198,6 +124,4 @@ text = "Heal"
 [connection signal="pressed" from="HB2" to="." method="_on_hb_2_pressed"]
 [connection signal="pressed" from="HB3" to="." method="_on_hb_3_pressed"]
 [connection signal="pressed" from="Colour" to="." method="_on_colour_pressed"]
-[connection signal="pressed" from="H1" to="." method="_on_h_1_pressed"]
-[connection signal="pressed" from="H2" to="." method="_on_h_2_pressed"]
-[connection signal="pressed" from="H3" to="." method="_on_h_3_pressed"]
+[connection signal="pressed" from="H" to="." method="_on_h_pressed"]

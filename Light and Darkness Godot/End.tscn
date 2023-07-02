@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dqw382yckmj1o"]
+[gd_scene load_steps=2 format=3 uid="uid://dqw382yckmj1o"]
+
+[ext_resource type="Texture2D" uid="uid://d0nd3yvhdy1jq" path="res://defaultBG.png" id="1_ogpvm"]
 
 [node name="End" type="Node2D"]
 
@@ -8,3 +10,9 @@ offset_top = 162.0
 offset_right = 361.0
 offset_bottom = 185.0
 text = "End"
+
+[node name="DefaultBg" type="Sprite2D" parent="."]
+z_index = -1446
+position = Vector2(2318, 1008.25)
+scale = Vector2(12.3904, 10.6534)
+texture = ExtResource("1_ogpvm")
